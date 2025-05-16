@@ -7,16 +7,16 @@ Original file is located at
     https://colab.research.google.com/drive/1I0urQpwVnmVKCfYx088VdnzlSGR66GsN
 """
 
-!pip install flask-ngrok
-!pip install opencv-python-headless
+pip install flask-ngrok
+pip install opencv-python-headless
 
-!mkdir face_detector
+mkdir face_detector
 
 # Download deploy.prototxt
-!wget -O face_detector/deploy.prototxt https://raw.githubusercontent.com/opencv/opencv/master/samples/dnn/face_detector/deploy.prototxt
+wget -O face_detector/deploy.prototxt https://raw.githubusercontent.com/opencv/opencv/master/samples/dnn/face_detector/deploy.prototxt
 
 # Download res10_300x300_ssd_iter_140000.caffemodel
-!wget -O face_detector/res10_300x300_ssd_iter_140000.caffemodel https://github.com/opencv/opencv_3rdparty/raw/dnn_samples_face_detector_20170830/res10_300x300_ssd_iter_140000.caffemodel
+wget -O face_detector/res10_300x300_ssd_iter_140000.caffemodel https://github.com/opencv/opencv_3rdparty/raw/dnn_samples_face_detector_20170830/res10_300x300_ssd_iter_140000.caffemodel
 
 import cv2
 import numpy as np
